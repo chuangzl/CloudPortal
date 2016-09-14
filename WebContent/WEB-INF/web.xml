@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ucsdportal</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>servicelist</servlet-name>
+    <servlet-class>com.cisco.ServiceList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servicelist</servlet-name>
+    <url-pattern>/servicelist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>vmlist</servlet-name>
+    <servlet-class>com.cisco.VmList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vmlist</servlet-name>
+    <url-pattern>/vmlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>proxy</servlet-name>
+    <servlet-class>com.cisco.Proxy</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>proxy</servlet-name>
+    <url-pattern>/proxy</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>vdclist</servlet-name>
+    <servlet-class>com.cisco.VdcList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vdclist</servlet-name>
+    <url-pattern>/vdclist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>policy</servlet-name>
+    <servlet-class>com.cisco.Policies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>policy</servlet-name>
+    <url-pattern>/policy</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>computingpolicy</servlet-name>
+    <servlet-class>com.cisco.ComputingPolicy</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>computingpolicy</servlet-name>
+    <url-pattern>/computingpolicy</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
